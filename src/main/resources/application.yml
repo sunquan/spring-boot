@@ -1,0 +1,17 @@
+spring:
+  profiles:
+    active: @spring.profiles.active@
+
+
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #type: org.apache.commons.dbcp2.BasicDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/test
+    username: root
+    password: nauq.123
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: sq.demo.spring.boot.repository.entity
+
